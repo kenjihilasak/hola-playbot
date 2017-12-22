@@ -1,7 +1,11 @@
 <context>
-  <input pattern="(buenas) *">
-    <output value="Hello $UserName!" if="full($UserName)"/>
-
+  <input pattern="(hola|buenas) *">
+    <output>
+      <item>"Hola $UserName!" if="full($UserName)"</item>
+      <item>"Como estás $UserName!" if="full($UserName)"</item>
+      <item>"Buenos días $UserName!" if="full($UserName)"</item>  
+    </output>
+     
     <context if="empty($UserName)">
       <output value="hola! Cuál es tu nombre?"/>
 
