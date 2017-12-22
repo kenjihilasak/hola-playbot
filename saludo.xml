@@ -1,5 +1,5 @@
 <context>
-  <input pattern="(hola|buenas) *">
+  <input pattern="(hola|buenas|buenos) *">
     <output if="full($UserName)">
       <item>"Hola $UserName!" </item>
       <item>"Como estás $UserName!"</item>
