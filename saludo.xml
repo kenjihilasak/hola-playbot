@@ -1,9 +1,9 @@
 <context>
   <input pattern="(hola|buenas) *">
-    <output>
-      <item>"Hola $UserName!" if="full($UserName)"</item>
-      <item>"Como estás $UserName!" if="full($UserName)"</item>
-      <item>"Buenos días $UserName!" if="full($UserName)"</item>  
+    <output if="full($UserName)">
+      <item>"Hola $UserName!" </item>
+      <item>"Como estás $UserName!"</item>
+      <item>"Buenos días $UserName!"</item>  
     </output>
      
     <context if="empty($UserName)">
